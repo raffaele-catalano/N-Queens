@@ -9,8 +9,8 @@
     <title>Peaceful Queens</title>
 </head>
 <body>
-    <div class="wrapper d-flex justify-content-center">
-        <div class="container d-flex flex-column align-items-center">
+    <div class="wrapper">
+        <div class="container">
             <h1 class="my-2">Peaceful N Queens</h1>
             <form id="queensForm">
                 <div class="mb-3">
@@ -20,7 +20,10 @@
                 </div>
             </form>
             <!-- ↓ dove verrano stampate le scacchiere tramite script.js -->
-            <div id="solutions"></div>
+            <div id="solutions">
+                <span id="loader"></span>
+            </div>
+            <!-- loader -->
         </div>
     </div>
     <div>
