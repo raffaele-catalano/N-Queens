@@ -72,7 +72,7 @@ function solveNQueens($n, &$solutions) {
             $countSolutions++; // incrementa il contatore di soluzioni valide
             return;
         }
-        // backtracing
+        // backtracking
         for ($col = 0; $col < $n; $col++) {
             if (isSafe($row, $col, $board, $n)) {
                 $board[$row][$col] = 1; // posiziona una regina
